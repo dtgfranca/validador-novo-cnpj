@@ -1,6 +1,6 @@
 {
     "name": "dtgfranca/validador-novo-cnpj",
-    "description": "Valida o cnpj com base nas regras do sepro",
+    "description": "Valida o cnpj com base nas regras do serpro.gov.br",
     "type": "package",
     "version": "1.0.0-beta",
     "minimum-stability": "dev",
