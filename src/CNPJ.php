@@ -4,10 +4,6 @@ namespace Dtgfranca\ValidadorNovoCnpj;
 class CNPJ
 {
     private static  $tamanhoCnpjSemDV =  12;
-    private static  $regexCnpjSemDv = '/^([A-Z\d]){12}$/';
-//    private static  $regexCnpj = '/^([A-Z\d]){12}(\d){2}$/';
-    private static $regexCaracteresMascara= '/[./-]/g';
-
     private static $pesosDV = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
     private static  $cnpjZerado = '00000000000000';
 
@@ -15,7 +11,7 @@ class CNPJ
     {
         if( !self::temCaracteresNaoPermitidos($cnpj)) {
             $cnpj = self::removeMascara($cnpj);
-            if($cnpj !==  '00000000000000' && self::temFormatoCnpj($cnpj)) {
+            if($cnpj !==  self::$cnpjZerado && self::temFormatoCnpj($cnpj)) {
                 $dv  = self::calculaDV( self::atribuiValorParaCalculoDv(self::removeDV($cnpj)));
                 return  $dv === self::obtemDv($cnpj);
             }
