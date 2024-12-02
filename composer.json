@@ -8,8 +8,7 @@
             "email": "diego.lightbase@sebraemg.com.br"
         }
     ],
-    "version": "1.0.0-beta",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "license": "MIT",
     "autoload": {
         "psr-4": {
