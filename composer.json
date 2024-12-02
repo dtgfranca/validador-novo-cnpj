@@ -1,7 +1,7 @@
 {
     "name": "sebraemg/validador-novo-cnpj",
     "description": "Valida o cnpj com base nas regras do serpro.gov.br",
-    "type": "package",
+    "type": "library",
     "authors": [
         {
             "name": "Diego Franca",
