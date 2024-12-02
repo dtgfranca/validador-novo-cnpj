@@ -1,10 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Dtgfranca\ValidadorNovoCnpj;
 
 class CNPJ
 {
-    private static $tamanhoCnpjSemDV =  12;
+    private static  $tamanhoCnpjSemDV =  12;
     private static $pesosDV = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
     private static $cnpjZerado = '00000000000000';
 
@@ -14,7 +14,7 @@ class CNPJ
             $cnpj = self::removeMascara($cnpj);
             if ($cnpj !==  self::$cnpjZerado && self::temFormatoCnpj($cnpj)) {
                 $dv  = self::calculaDV(self::atribuiValorParaCalculoDv(self::removeDV($cnpj)));
-                return  $dv === self::obtemDv($cnpj);
+                return (bool) ($dv === self::obtemDv($cnpj));
             }
 
         }
@@ -27,7 +27,7 @@ class CNPJ
     private static function temCaracteresNaoPermitidos(string $cnpj): bool
     {
 
-        return preg_match('/[^A-Z\d.\/-]/i', $cnpj);
+        return (bool) preg_match('/[^A-Z\d.\/-]/i', $cnpj);
     }
     private static function removeMascara(string $cnpj): string
     {
@@ -45,7 +45,7 @@ class CNPJ
     }
     private static function temFormatoCnpj(string $cnpj): bool
     {
-        return preg_match('/^([A-Z\d]){12}(\d){2}$/', $cnpj);
+        return (bool) preg_match('/^([A-Z\d]){12}(\d){2}$/', $cnpj);
     }
 
     private static function calculaDV(array $valor): string
