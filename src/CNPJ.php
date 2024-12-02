@@ -37,7 +37,7 @@ class CNPJ
     private static function removeDV(string $cnpj): string
     {
 
-        return substr($cnpj, 0, 12);
+        return substr($cnpj, 0, self::$tamanhoCnpjSemDV);
     }
     private static function obtemDv(string $cnpj): string
     {
