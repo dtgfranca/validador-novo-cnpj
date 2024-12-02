@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dtgfranca\ValidadorNovoCnpj;
+namespace SebraeMG\ValidadorNovoCnpj;
 
 class CNPJ
 {
