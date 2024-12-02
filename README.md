@@ -14,7 +14,7 @@ composer require dtgfranca/cnpj-validator
 ## Utilização
 Após instalar o pacote, vocé pode utiliza-lo da seguinte maneira:
 ```php
-use CnpjValidator\Cnpj;
+use Dtgfranca\ValidadorNovoCnpj\CNPJ;
 
 $cnpj = '12.ABC.345/01DE-35';
 
