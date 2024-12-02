@@ -18,7 +18,7 @@ Primeiro adicione este repositório privado no seu arquivo composer.json:
  ```
 
 ```bash
-composer require sebraemg/cnpj-validator
+composer require sebraemg/validador-novo-cnpj:versao
  ```
 
 
