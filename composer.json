@@ -20,12 +20,6 @@
             "Tests\\": "tests/"
         }
     },
-    "authors": [
-        {
-            "name": "Diego Franca",
-            "email": "diego.tg.franca@gmail.com"
-        }
-    ],
     "require": {
         "php": "^8.1"
     },
