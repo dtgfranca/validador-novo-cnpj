@@ -4,17 +4,28 @@ Este pacote PHP permite validar se um CNPJ é válido  de acordo com as novas re
 
 ## Instalação
 
-Você pode instalar o pacote via Composer:
+Primeiro adicione este repositório privado no seu arquivo composer.json:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "https://git.sebraemg.com.br/plataforma/sdk-php.git"
+    }
+  ]
+}
+ ```
 
 ```bash
-composer require dtgfranca/cnpj-validator
+composer require sebraemg/cnpj-validator
  ```
 
 
 ## Utilização
 Após instalar o pacote, vocé pode utiliza-lo da seguinte maneira:
 ```php
-use Dtgfranca\ValidadorNovoCnpj\CNPJ;
+use SebraeMG\ValidadorNovoCnpj\CNPJ;
 
 $cnpj = '12.ABC.345/01DE-35';
 
