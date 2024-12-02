@@ -11,7 +11,7 @@ Primeiro adicione este repositório privado no seu arquivo composer.json:
   "repositories": [
     {
       "type": "vcs",
-      "url":  "https://git.sebraemg.com.br/plataforma/sdk-php.git"
+      "url":  "https://git.sebraemg.com.br/plataforma/validador-novo-cnpj.git"
     }
   ]
 }
