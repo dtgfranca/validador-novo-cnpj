@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
-namespace Tests\Feature\ExampleTest;
+namespace Tests\Feature\CNPJTest;
 
 use Dtgfranca\ValidadorNovoCnpj\CNPJ;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-class CNPTest extends TestCase
+class CNPJTest extends TestCase
 {
     #[DataProvider('cnpjsInvalidos')]
     public function testCpnjNaoValido($cnpj): void
