@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Dtgfranca\ValidadorNovoCnpj;
 
 class CNPJ
 {
-    private static  $tamanhoCnpjSemDV =  12;
+    private static $tamanhoCnpjSemDV =  12;
     private static $pesosDV = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
     private static $cnpjZerado = '00000000000000';
 
