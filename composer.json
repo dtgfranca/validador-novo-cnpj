@@ -13,7 +13,11 @@
     "autoload": {
         "psr-4": {
             "SebraeMG\\ValidadorNovoCnpj\\": "src/"
-        }
+
+        },
+        "files": [
+            "src/helpers/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
