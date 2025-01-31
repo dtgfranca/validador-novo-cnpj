@@ -7,7 +7,7 @@ Este pacote PHP permite validar se um CNPJ é válido  de acordo com as novas re
 Você pode instalar o pacote via Composer:
 
 ```bash
-composer require dtgfranca/cnpj-validator
+composer require dtgfranca/validador-novo-cnpj
  ```
 
 
