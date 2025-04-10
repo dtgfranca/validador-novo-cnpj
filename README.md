@@ -27,7 +27,7 @@ if (Cnpj::isValid($cnpj)) {
 Caso haja necessidade de gerar um CNPJ válido, vocé pode utiliza-lo da seguinte maneira:
 
 ```php
-use SebraeMG\ValidadorNovoCnpj\CNPJ;
+use Dtgfranca\ValidadorNovoCnpj\CNPJ;
 
 $cnpj = CNPJ::gerar(true); // true para formatado "ZB.DVI.P3O/WRH2-58", false para não formatado "ZBDVIP3OWRH258"
 ```
