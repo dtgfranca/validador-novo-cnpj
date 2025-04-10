@@ -77,4 +77,14 @@ class CNPJ
         }
         return  $cnpj;
     }
+
+    public static function gerar(bool $formatado = false): string
+    {
+        $string = stringsAleatorias(self::$tamanhoCnpjSemDV);
+        $dv = self::calculaDV(self::atribuiValorParaCalculoDv($string));
+        if ($formatado) {
+            return formatarCNPJ("{$string}{$dv}");
+        }
+        return "{$string}{$dv}";
+    }
 }

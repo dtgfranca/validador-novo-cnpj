@@ -8,8 +8,12 @@
     "autoload": {
         "psr-4": {
             "Dtgfranca\\ValidadorNovoCnpj\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers/helpers.php"
+        ]
     },
+
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"

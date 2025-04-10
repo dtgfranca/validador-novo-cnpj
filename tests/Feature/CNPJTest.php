@@ -17,6 +17,19 @@ class CNPJTest extends TestCase
     {
         $this->assertTrue(CNPJ::isValid($cnpj));
     }
+
+    public function testGerarCnpjValidoFormatado(): void
+    {
+
+        $cnpj = CNPJ::gerar(true);
+        $this->assertTrue(CNPJ::isValid($cnpj));
+    }
+    public function testGerarCnpjValidoNaoFormatado(): void
+    {
+
+        $cnpj = CNPJ::gerar();
+        $this->assertTrue(CNPJ::isValid($cnpj));
+    }
     public static function cnpjsValidos(): array
     {
         return [
