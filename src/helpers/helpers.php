@@ -1,12 +1,16 @@
 <?php
+
 declare(strict_types=1);
 
 if (!function_exists('stringsAleatorias')) {
     function stringsAleatorias(int $tamanho): string
     {
         $resultado = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        return substr(str_shuffle($resultado),
-            0, $tamanho);
+        return substr(
+            str_shuffle($resultado),
+            0,
+            $tamanho
+        );
     }
 }
 

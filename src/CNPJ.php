@@ -82,7 +82,7 @@ class CNPJ
     {
         $string = stringsAleatorias(self::$tamanhoCnpjSemDV);
         $dv = self::calculaDV(self::atribuiValorParaCalculoDv($string));
-        if($formatado){
+        if ($formatado) {
             return formatarCNPJ("{$string}{$dv}");
         }
         return "{$string}{$dv}";
