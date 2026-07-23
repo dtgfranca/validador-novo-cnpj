@@ -32,3 +32,17 @@ use Dtgfranca\ValidadorNovoCnpj\CNPJ;
 $cnpj = CNPJ::gerar(true); // true para formatado "ZB.DVI.P3O/WRH2-58", false para não formatado "ZBDVIP3OWRH258"
 ```
 
+## Ferramenta Online
+
+Se você não precisa gerar CNPJs diretamente pelo PHP ou apenas deseja testar rapidamente, utilize a ferramenta online:
+
+👉 https://tools.diegofranca.dev/
+
+Ela permite:
+
+- ✅ Gerar CNPJs alfanuméricos válidos
+- ✅ Gerar CNPJs com ou sem formatação
+- ✅ Validar CNPJs
+- ✅ Copiar o resultado com um clique
+
+Ideal para desenvolvedores, QAs e testes de aplicações.
