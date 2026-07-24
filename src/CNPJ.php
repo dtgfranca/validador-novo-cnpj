@@ -99,7 +99,7 @@ class CNPJ
         $caracteres = str_split($cnpj);
 
         return array_map(
-            static fn(string $char): int => (int) ord($char) - self::ORD_ZERO,
+            static fn (string $char): int => (int) ord($char) - self::ORD_ZERO,
             $caracteres
         );
     }
