@@ -1,19 +1,13 @@
 {
     "name": "dtgfranca/validador-novo-cnpj",
-    "description": "Valida o cnpj com base nas regras do serpro.gov.br",
-    "type": "package",
-    "version": "1.0.0-beta",
-    "minimum-stability": "dev",
+    "description": "Valida o CNPJ com base nas novas regras alfanuméricas do Serpro",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Dtgfranca\\ValidadorNovoCnpj\\": "src/"
-        },
-        "files": [
-            "src/helpers/helpers.php"
-        ]
+        }
     },
-
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
@@ -31,5 +25,8 @@
     "require-dev": {
         "phpunit/phpunit": "^11.4",
         "friendsofphp/php-cs-fixer": "^3.65"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
